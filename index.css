@@ -7,9 +7,62 @@ body {
   padding: 0;
 
   overflow: hidden;
+}
+
+#right-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  z-index: -3;
 
   /* TODO insert image/gif/whatever */
   background-color: #0f51b6;
+}
+
+#left-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 33%;
+
+  z-index: -2;
+
+  background-color: #fff;
+  clip-path: polygon(100% 0%, 40% 100%, 00% 100%, 0% 0%);
+}
+
+#left-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 14.5vw;
+  
+  /* Use text-shadow to make extra bold */
+  text-shadow: 0px 2px, 2px 0px, 2px 2px;
+
+  text-align: center;
+
+  text-wrap: none;
+  white-space:nowrap;
+
+  letter-spacing: -20px;
+
+  /* Makes it easier to rotate and move */
+  height: 0px;
+  width: 0px;
+
+  transform: rotate(90deg) skew(-10deg) translateY(-12vw) translateX(-40px);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#item-num {
+  color: #747474;
 }
 
 #main {
@@ -17,6 +70,9 @@ body {
   font-weight: 900;
   font-size: 3.5em;
   letter-spacing: -1px;
+
+  /* Use text-shadow to make extra bold */
+  text-shadow: 0px 2px, 2px 0px, 2px 2px;
 
   height: 100%;
 
@@ -29,8 +85,6 @@ body {
 
   text-align: center;
 
-  /* Use text-shadow to make extra bold */
-  text-shadow: 0px 2px, 2px 0px, 2px 2px;
 }
 
 #main-inner {
