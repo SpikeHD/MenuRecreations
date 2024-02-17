@@ -48,22 +48,31 @@ function onMenuItemExit(e, idx) {
 
   // Hide the highlight
   const highlight = document.getElementById('menu-item-highlight')
+  const redHighlight = document.getElementById('menu-item-highlight-red')
+  const redHightlightAbove = document.getElementById('menu-item-highlight-red-above')
   highlight.style.left = '-9999px'
+  redHighlight.style.left = '-9999px'
+  redHightlightAbove.style.left = '-9999px'
 }
 
 function setHighlightPos(idx) {
   // Argument is the element we are positioning with
   const elm = document.querySelectorAll('#main-inner span')[idx]
   const highlight = document.getElementById('menu-item-highlight')
+  const redHighlight = document.getElementById('menu-item-highlight-red')
+  const redHightlightAbove = document.getElementById('menu-item-highlight-red-above')
   const rect = elm.getBoundingClientRect()
 
-  DEBUG_drawRect(rect)
+  // DEBUG_drawRect(rect)
   
   // Calculate width based on amount of characters
   const text = elm.innerText
   const fontSize = window.getComputedStyle(elm).fontSize
   const width = text.length * parseFloat(fontSize)
+
   highlight.style.width = `${width * 0.8}px`
+  redHighlight.style.width = `${width * 0.8}px`
+  redHightlightAbove.style.width = `${width * 0.8}px`
 
   // Ensure we are in the center of the rect
   const highlightRect = highlight.getBoundingClientRect()
@@ -72,6 +81,10 @@ function setHighlightPos(idx) {
   
   highlight.style.left = `${x}px`
   highlight.style.top = `${y}px`
+  redHighlight.style.left = `${x}px`
+  redHighlight.style.top = `${y}px`
+  redHightlightAbove.style.left = `${x}px`
+  redHightlightAbove.style.top = `${y}px`
 
   // Apply the same rotation and skew to the highlight
   const rotation = Number(elm.getAttribute('data-rot'))
@@ -81,4 +94,6 @@ function setHighlightPos(idx) {
   const offsetY = highlightRect.height / 4
 
   highlight.style.transform = `rotate(${rotation/3}deg) skewY(${(rotation/1.2) + -extraSkew}deg) translateY(${offsetY}px)`
+  redHighlight.style.transform = `rotate(${(rotation/3) + 2}deg) skewY(${(rotation/1.2) + -extraSkew}deg) translateY(${offsetY}px)`
+  redHightlightAbove.style.transform = `rotate(${(rotation/3) + 2}deg) skewY(${(rotation/1.2) + -extraSkew}deg) translateY(${offsetY}px)`
 }
