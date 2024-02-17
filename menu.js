@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     span.addEventListener('mouseenter', (e) => onMenuItemHover(e, index))
     span.addEventListener('mouseleave', (e) => onMenuItemExit(e, index))
+    span.addEventListener('click', (e) => playMenuSelect())
   })
 });
 
@@ -35,6 +36,8 @@ function onMenuItemHover(e, idx) {
 
   // Set the item number
   itemNum.innerText = (idx + 1).toString().padStart(2, '0')
+
+  playMenuHighlight()
 }
 
 function onMenuItemExit(e, idx) {
