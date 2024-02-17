@@ -1,5 +1,9 @@
-# Pause Menu Recreation of Persona 3 Reload
+# Menu Recreations
 
-[View here!](https://spikehd.github.io/P3RRecreation).
+This repo houses a collection of recreations of menus for games and such. This repo is updated when I'm excruciatingly bored and have nothing better to do.
 
-Contains sound. If it doesn't play, click somewhere on the page first.
+All of them are written in HTML/CSS/JS, and are hosted on GitHub Pages.
+
+# List of Recreations
+
+* [Persona 3 Reload](https://spikehd.github.io/MenuRecreations/menus/p3reload)
