@@ -19,7 +19,7 @@ body {
   z-index: -3;
 
   /* TODO insert image/gif/whatever */
-  background-color: #0f51b6;
+  background-color: #093ab0;
 }
 
 #left-background {
@@ -68,7 +68,7 @@ body {
 #main {
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
-  font-size: 3.5em;
+  font-size: 3vw;
   letter-spacing: -1px;
 
   /* Use text-shadow to make extra bold */
@@ -84,7 +84,6 @@ body {
   justify-content: center;
 
   text-align: center;
-
 }
 
 #main-inner {
@@ -101,6 +100,8 @@ body {
   padding: 0;
   height: 1.05em;
 
+  width: 20vw;
+
   cursor: pointer;
   user-select: none;
 
@@ -115,7 +116,8 @@ body {
 }
 
 .menu-hover {
-  cursor: pointer;
+  color: #000 !important;
+  z-index: 4 !important;
 }
 
 #item,
@@ -126,4 +128,18 @@ body {
 
 #quest {
   color: #377bf9; 
+}
+
+#menu-item-highlight {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  z-index: 3;
+
+  width: 12vw;
+  height: 8vh;
+
+  background-color: #fff;
+  clip-path: polygon(100% 0%, 0% 100%, 84% 100%);
 }
