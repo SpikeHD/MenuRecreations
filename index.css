@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,600;0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,900&display=swap');
 
 :root {
   --menu-highlight-height: 10vh;
@@ -109,6 +109,10 @@ body {
 
   background-color: #fff;
   border: 3px solid #000;
+}
+
+#wallet-subtitle {
+  line-height: 18px;
 }
 
 #wallet-money {
@@ -255,4 +259,87 @@ body {
   100% {
     transform: scale(1);
   }
+}
+
+#tooltips {
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8vw;
+  font-style: italic;
+  color: #fff;
+
+  text-shadow: -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+
+  position: absolute;
+  bottom: 6vh;
+  right: 0;
+
+  user-select: none;
+}
+
+#command {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 0.8vw;
+  font-style: normal;
+}
+
+#command-line {
+  height: 0.3vh;
+  width: 10vw;
+
+  background: #fff;
+  border: 2px solid #000;
+}
+
+#tooltip-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 14vw;
+
+  margin-top: 10px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+
+  font-size: 1vw;
+
+  margin-right: 10px;
+
+  cursor: pointer;
+}
+
+.btn-letter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4px;
+
+  width: 2vh;
+  height: 2vh;
+
+  border-radius: 50%;
+  background: rgb(0, 0, 65);
+
+  /* white box shadow */
+  box-shadow: 0 0 2px 3px #fff;
+
+  margin-right: 8px;
+}
+
+.btn-name {
+  padding: 4px;
 }
