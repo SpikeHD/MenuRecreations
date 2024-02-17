@@ -45,7 +45,7 @@ body {
 
   z-index: -2;
 
-  background-image: linear-gradient(to bottom, rgb(31, 172, 255 ,0.7), rgb(5, 31, 177, 0.7));
+  background-image: linear-gradient(to bottom, rgb(31, 172, 255 ,0.7), rgb(5, 31, 177, 0.9));
 }
 
 #left-background {
