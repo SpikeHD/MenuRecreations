@@ -27,6 +27,27 @@ body {
   background-color: #093ab0;
 }
 
+#right-background img {
+  position: relative;
+
+  width: 100%;
+  z-index: -3;
+
+  filter: blur(2px) ;
+}
+
+#bg-tint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  z-index: -2;
+
+  background-image: linear-gradient(to bottom, rgb(31, 172, 255 ,0.6), rgb(8, 36, 187, 0.6));
+}
+
 #left-background {
   position: absolute;
   top: 0;
