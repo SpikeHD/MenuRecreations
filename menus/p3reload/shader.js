@@ -1,5 +1,7 @@
 const fragShaderSrc = `
 // Mazure3D
+// https://www.shadertoy.com/view/lX23z1
+
 #version 100
 precision mediump float;
 
