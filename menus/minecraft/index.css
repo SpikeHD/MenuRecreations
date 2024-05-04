@@ -1,0 +1,76 @@
+/* Import minecraft fonts from assets/font */
+@font-face {
+  font-family: 'Minecraft';
+  src: url('font/MinecraftRegular.otf');
+}
+
+@font-face {
+  font-family: 'MinecraftBold';
+  src: url('font/MinecraftBold.otf');
+}
+
+@font-face {
+  font-family: 'MinecraftItalic';
+  src: url('font/MinecraftItalic.otf');
+}
+
+@font-face {
+  font-family: 'MinecraftBoldItalic';
+  src: url('font/MinecraftBoldItalic.otf');
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: -999;
+  pointer-events: none;
+}
+
+#menu-top {
+  height: 30%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#menu-top img {
+  height: 100%;
+}
+
+#flavor {
+  position: fixed;
+
+  top: 18%;
+  right: 25%;
+
+  font-family: 'Minecraft';
+  font-size: 1.5em;
+
+  text-shadow: 4px 4px #3f3f00;
+
+  color: #ffff00;
+
+  transform: rotate(-5deg);
+
+  animation: bounce 0.7s infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1) rotate(-15deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(-15deg);
+  }
+  100% {
+    transform: scale(1) rotate(-15deg);
+  }
+}
