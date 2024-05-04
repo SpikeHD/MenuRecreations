@@ -7,3 +7,4 @@ All of them are written in HTML/CSS/JS, and are hosted on GitHub Pages. More inf
 # List of Recreations
 
 * [Persona 3 Reload](https://spikehd.github.io/MenuRecreations/menus/p3reload)
+* [Minecraft](https://spikehd.github.io/MenuRecreations/menus/minecraft)
