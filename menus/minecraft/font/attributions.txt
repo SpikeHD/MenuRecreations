@@ -1,1 +1,0 @@
-MinecraftRegular, MinecraftBold, MinecraftItalic, and MinecraftBoldItalic created by JDGraphics

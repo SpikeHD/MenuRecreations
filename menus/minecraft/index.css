@@ -19,6 +19,64 @@
   src: url('font/MinecraftBoldItalic.otf');
 }
 
+html {
+  user-select: none;
+}
+
+#mojang-load {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f02e3a;
+
+  z-index: 999;
+
+  transition: opacity 1s ease;
+}
+
+#mojang-load img {
+  position: fixed;
+
+  top: 40%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 60%;
+}
+
+#loading-bar {
+  position: fixed;
+
+  top: 80%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 60%;
+  height: 20px;
+
+  background-color: transparent;
+
+  border: 6px solid #fff;
+}
+
+#loading-bar-fill {
+  width: 0%;
+  height: 100%;
+
+  background-color: #fff;
+
+  transition: all 0.2s ease;
+}
+
 #bg {
   position: fixed;
   top: 0;
@@ -50,6 +108,9 @@
   top: 18%;
   right: 25%;
 
+  max-width: 20%;
+  text-align: center;
+
   font-family: 'Minecraft';
   font-size: 1.5em;
 
@@ -73,4 +134,87 @@
   100% {
     transform: scale(1) rotate(-15deg);
   }
+}
+
+#buttons {
+  position: fixed;
+
+  top: 46%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 30%;
+}
+
+.button {
+  image-rendering: pixelated;
+
+  z-index: 2;
+
+  width: 100%;
+  height: 60px;
+
+  font-family: 'Minecraft';
+  font-size: 1.6em;
+
+  cursor: pointer;
+
+  margin-bottom: 20px;
+}
+
+.button .button-text {
+  position: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  text-shadow: 2px 2px #3f3f3f;
+
+  width: 100%;
+  height: 60px;
+
+  text-align: center;
+
+  z-index: 1;
+}
+
+.button img {
+  width: 100%;
+  height: 100%;
+
+  z-index: 0;
+} 
+
+#bottom {
+  position: fixed;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  font-family: 'Minecraft';
+  font-size: 1.4em;
+
+  color: #fff;
+  text-shadow: 2px 2px #3f3f3f;
+
+  right: 50%;
+  transform: translate(50%, 0);
+
+  width: 99%;
+
+  bottom: 0;
+}
+
+#bottom-right {
+  cursor: pointer;
 }

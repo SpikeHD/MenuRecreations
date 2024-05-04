@@ -14,6 +14,14 @@
   </head>
 
   <body>
+    <div id="mojang-load">
+      <img src="assets/mojang_logo.png">
+
+      <div id="loading-bar">
+        <div id="loading-bar-fill"></div>
+      </div>
+    </div>
+
     <div id="bg">
       <a-scene xr-mode-ui="enabled: false" look-controls="enabled: false; mouseEnabled: false; touchEnabled: false">
         <a-assets>
@@ -25,7 +33,7 @@
           <img id="img5" src="assets/panorama_night/panorama_5.png" />
         </a-assets>
 
-        <a-camera rotation="-20 0 0" animation="property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 180000"></a-camera>
+        <a-camera rotation="-20 360 0" animation="property: rotation; to: 0 0 0; easing: linear; loop: true; dur: 180000"></a-camera>
 
         <!-- Images 0-3 are the walls of the cube, 4 and 5 are the top and bottom -->
         <a-image src="#img0" position="0 0 -5" rotation="0 0 0" scale="10 10 10"></a-image>
@@ -42,9 +50,45 @@
       <img src="assets/minecraftmain.png">
 
       <span id="flavor">
-        Java? More like JavaScript!
+        Who needs Java when you have JavaScript!
       </span>
     </div>
 
+    <div id="buttons">
+      <div class="button">
+        <span class="button-text">
+          Singleplayer
+        </span>
+
+        <img src="assets/mc_button.png">
+      </div>
+
+      <div class="button">
+        <span class="button-text">
+          Multiplayer
+        </span>
+
+        <img src="assets/mc_button.png">
+      </div>
+
+      <div class="button">
+        <span class="button-text">
+          Options
+        </span>
+
+        <img src="assets/mc_button.png">
+      </div>
+    </div>
+
+    <div id="bottom">
+      <div id="bottom-left">
+        Minecraft 4.2.0
+      </div>
+
+      <div id="bottom-right">
+        Copyright Mojang AB. And SpikeHD!
+      </div>
   </body>
+
+  <script src="index.js"></script>
 </html>

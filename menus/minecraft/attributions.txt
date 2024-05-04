@@ -1,0 +1,5 @@
+MinecraftRegular font created by JDGraphics
+Mojang Logo created by Mojang Studios
+Panorama created by Blurryfacee (https://www.planetminecraft.com/texture-pack/minecraft-cavesand-cliffs-part-ii-main-menu-panorama/)
+
+HTML/CSS/JS written by SpikeHD (https://github.com/SpikeHD)
